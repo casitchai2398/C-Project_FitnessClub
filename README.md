@@ -1,4 +1,4 @@
-# C-Project_FitnessClub
+# C#-Project_FitnessClub
 This is project was accomplished as the final project of the business application course in Kelley School of Business. 
 It incorporated front-end and back-end interfaces which are connected to a local text file as database.
 The front-end interface helps customer service assistants provide accurate and up-to-date information concerning to price and availability to customers.
