@@ -1,0 +1,82 @@
+﻿<Window x:Class="FinalProjectTemplate2.Membership_Sales"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProjectTemplate2"
+        mc:Ignorable="d"
+        Title="Membership Sales"  Height="537.303" Width="726">
+    <Grid Margin="0,0,2,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="labMSMembershipType" Content="Membership Type" HorizontalAlignment="Left" Margin="40,137,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comMSMembershipType" HorizontalAlignment="Left" Margin="163,141,0,0" VerticalAlignment="Top" Width="120" TabIndex="1">
+            <ComboBoxItem Content="Individual 3 months"/>
+            <ComboBoxItem Content="Individual 12 months"/>
+            <ComboBoxItem Content="Two person 3 months"/>
+            <ComboBoxItem Content="Two person 12 months"/>
+            <ComboBoxItem Content="Family 3 months"/>
+            <ComboBoxItem Content="Family 12 months"/>
+        </ComboBox>
+        <Label x:Name="labMSStartDate" Content="Start Date" HorizontalAlignment="Left" Margin="80,179,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbMSStartDate" HorizontalAlignment="Left" Height="22" Margin="163,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="2018/11/5" TabIndex="2"/>
+        <Label x:Name="labMSAdditionalFeature" Content="Additional Feature" HorizontalAlignment="Left" Margin="36,222,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cobMSAdditionalFeature" HorizontalAlignment="Left" Margin="163,222,0,0" VerticalAlignment="Top" Width="120" TabIndex="3">
+            <ComboBoxItem Content="Personal Training Plan"/>
+            <ComboBoxItem Content="Locker Rantal"/>
+            <ComboBoxItem Content="Massage"/>
+            <ComboBoxItem Content="Meal Plan "/>
+            <ComboBoxItem Content="Equipment Rental"/>
+        </ComboBox>
+        <Button x:Name="btnMSSubmit" Content="Submit" HorizontalAlignment="Left" Margin="53,322,0,0" VerticalAlignment="Top" Width="76" TabIndex="5"/>
+        <Button x:Name="btnMSClear" Content="Clear" HorizontalAlignment="Left" Margin="207,322,0,0" VerticalAlignment="Top" Width="76" TabIndex="6"/>
+        <Rectangle x:Name="recMSSummary" HorizontalAlignment="Left" Height="340" Margin="322,137,0,0" Stroke="Black" VerticalAlignment="Top" Width="364"/>
+        <Label x:Name="labMSSummary" Content="Summary" HorizontalAlignment="Left" Margin="346,123,0,0" VerticalAlignment="Top" Background="White" Height="27"/>
+        <TextBlock x:Name="txbMSMembership" HorizontalAlignment="Left" Margin="425,172,0,0" TextWrapping="Wrap" Text="Membership:" VerticalAlignment="Top" Width="72"/>
+        <TextBlock x:Name="txbMSMembershipInfo" HorizontalAlignment="Left" Margin="519,172,0,0" TextWrapping="Wrap" Text="Individual 3 months" VerticalAlignment="Top" Width="141"/>
+        <TextBlock x:Name="txbMSDate" HorizontalAlignment="Left" Margin="466,201,0,0" TextWrapping="Wrap" Text="Date:" VerticalAlignment="Top" Width="34"/>
+        <TextBlock x:Name="txbMSMembershipCost" HorizontalAlignment="Left" Margin="346,234,0,0" TextWrapping="Wrap" Text="Membership cost per month:" VerticalAlignment="Top" Width="157"/>
+        <TextBlock x:Name="txbMSDateInfo" HorizontalAlignment="Left" Margin="519,203,0,0" TextWrapping="Wrap" Text="2018/11/5 - 2019/02/5" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="137">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.003"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="txbMSMembershipCostInfo" HorizontalAlignment="Left" Margin="519,234,0,0" TextWrapping="Wrap" Text="$30.00/month" VerticalAlignment="Top" Width="141"/>
+        <TextBlock x:Name="txbMSFeaature" HorizontalAlignment="Left" Margin="451,269,0,0" TextWrapping="Wrap" Text="Feature:" VerticalAlignment="Top" Width="49"/>
+        <TextBlock x:Name="txbMSFeaatureInfo" HorizontalAlignment="Left" Margin="519,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="114"><Run Text="Personal Training Plan - $5.00 per month"/><LineBreak/><Run Text="Locker Rental - $1.00 per month"/></TextBlock>
+        <TextBlock x:Name="txbMSTotal" HorizontalAlignment="Left" Margin="425,451,0,0" TextWrapping="Wrap" Text="Total: (no tax)" VerticalAlignment="Top" Width="75"/>
+        <TextBlock x:Name="txbMSTotalInfo" HorizontalAlignment="Left" Margin="511,451,0,0" TextWrapping="Wrap" Text="$96.00" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="137">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.003"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Label x:Name="labMembershipSales" Content="Membership Sales" HorizontalAlignment="Left" Margin="269,14,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF65B91E"/>
+        <Label x:Name="labMSDiscountType" Content="Discount Type" HorizontalAlignment="Left" Margin="58,264,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cobMSDiscountType" HorizontalAlignment="Left" Margin="163,264,0,0" VerticalAlignment="Top" Width="120" TabIndex="4">
+            <ComboBoxItem Content="Student"/>
+            <ComboBoxItem Content="Senior"/>
+            <ComboBoxItem Content="Youth"/>
+            <ComboBoxItem Content="Disable"/>
+            <ComboBoxItem Content="Special"/>
+        </ComboBox>
+        <Button x:Name="btnMSPurchase" Content="Purchase" HorizontalAlignment="Left" Margin="53,424,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click" TabIndex="7"/>
+        <Button x:Name="btnMSCancel" Content="Cancel" HorizontalAlignment="Left" Margin="207,424,0,0" VerticalAlignment="Top" Width="76" TabIndex="8"/>
+        <Label x:Name="labMSAvailability" Content="Availability" HorizontalAlignment="Left" Margin="84,369,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbMSAvailability" HorizontalAlignment="Left" Height="22" Margin="163,369,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="yes"/>
+        <TextBlock x:Name="txbMSDiscount" HorizontalAlignment="Left" Margin="445,382,0,0" TextWrapping="Wrap" Text="Discount:" VerticalAlignment="Top" Width="55"/>
+        <TextBlock x:Name="txbMSDiscountInfo" HorizontalAlignment="Left" Margin="519,383,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="65" Text="Student - ($20.00)"/>
+        <TextBlock x:Name="txbMSInstructions" HorizontalAlignment="Left" Margin="36,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="82" Width="650"><Run Text="Instructions:"/><LineBreak/><Run Text="1. Please select a membership type, provide a membership start date, and select whether or not to include the additional features in order to generate a quote for the customer."/><LineBreak/><Run Text="2. Only membership types that are currently marked as available can be purchased. "/><LineBreak/><Run Text="3. "/><Run FontWeight="Bold" Text="Only after the quote preview " TextDecorations="Underline"/><Run Text="can the user choose to proceed with the membership signup."/><LineBreak/><Run/></TextBlock>
+
+    </Grid>
+</Window>

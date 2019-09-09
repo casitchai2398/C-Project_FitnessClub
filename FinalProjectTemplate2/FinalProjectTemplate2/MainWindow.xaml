@@ -1,0 +1,17 @@
+﻿<Window x:Class="FinalProjectTemplate2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProjectTemplate2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button x:Name="btn_Sales" Content="Membership Sales" HorizontalAlignment="Left" Margin="191,117,0,0" VerticalAlignment="Top" Width="135" Click="btn_Membership_Sales_Click" Height="40" Background="#FF85B014" Foreground="White" BorderBrush="{x:Null}" TabIndex="1"/>
+        <Button x:Name="btn_Pricing" Content="Pricing Management" HorizontalAlignment="Left" Margin="191,180,0,0" VerticalAlignment="Top" Width="135" Click="btn_Pricing_Management_Click" Height="40" Background="#FF85B014" Foreground="White" BorderBrush="{x:Null}" TabIndex="2"/>
+        <Button x:Name="btn_memberInformation" Content="Member Information" HorizontalAlignment="Left" Margin="191,242,0,0" VerticalAlignment="Top" Width="135" Click="btn_Member_Information_Click" Height="40" Background="#FF85B014" Foreground="White" BorderBrush="{x:Null}" TabIndex="3"/>
+        <Label x:Name="lab_mainMenu" Content="Main Menu" HorizontalAlignment="Left" Margin="174,10,0,0" VerticalAlignment="Top" FontWeight="Bold" Foreground="#FF85B014" FontSize="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="151,65,0,0" TextWrapping="Wrap" Text="Welcome to the Fitness Club!" VerticalAlignment="Top" FontSize="16" Foreground="#FFB7DC91"/>
+
+    </Grid>
+</Window>

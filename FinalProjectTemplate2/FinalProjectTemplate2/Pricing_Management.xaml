@@ -1,0 +1,35 @@
+﻿<Window x:Class="FinalProjectTemplate2.Pricing_Management"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProjectTemplate2"
+        mc:Ignorable="d"
+        Title="Pricing Management" Height="459.196" Width="801.416">
+    <Grid>
+        <Label x:Name="lblPricing" Content="Pricing Management" HorizontalAlignment="Left" Margin="284,10,0,0" VerticalAlignment="Top" BorderBrush="#FFCF2424" Foreground="#FF85B014" FontSize="20"/>
+        <Label x:Name="lblMemberType" Content="Select Membership Type:" HorizontalAlignment="Left" Margin="24,69,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbbMemberType" HorizontalAlignment="Left" Margin="185,73,0,0" VerticalAlignment="Top" Width="145" TabIndex="1" >
+            <ListBoxItem Content="Individual 3 Months"/>
+            <ListBoxItem Content="Individual 12 Months"/>
+            <ListBoxItem Content="Two Person 3 Months"/>
+            <ListBoxItem Content="Two Person 12 Months"/>
+            <ListBoxItem Content="Family 3 Months"/>
+            <ListBoxItem Content="Family 12 Months"/>
+        </ComboBox>
+        <Label x:Name="lblCurrentPrice" Content="Current Price:" HorizontalAlignment="Left" Margin="24,111,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSummary" HorizontalAlignment="Left" Height="146" Margin="185,244,0,0" TextWrapping="Wrap" Text="Membership Type          Price          Availability&#xD;&#xA;Individual 3 Months       $29.99       available&#xD;&#xA;Individual 12 Months     $29.99       available&#xD;&#xA;Two Person 3 Months    $29.99       not available&#xD;&#xA;Two Person 12 Months  $29.99       not available&#xD;&#xA;Family 3 Months            $29.99       available&#xD;&#xA;Family 12 Months          $29.99       available" VerticalAlignment="Top" Width="338" IsTabStop="False" />
+        <Label x:Name="lblAvailability" Content="Availability:" HorizontalAlignment="Left" Margin="24,156,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCurrentPrice" HorizontalAlignment="Left" Height="23" Margin="185,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Text="$29.99" TabIndex="2"/>
+        <Label x:Name="lblSummary" Content="Summary:" HorizontalAlignment="Left" Margin="24,240,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnChange" Content="Change" HorizontalAlignment="Left" Margin="185,205,0,0" VerticalAlignment="Top" Width="75" TabIndex="4"/>
+        <Label x:Name="lblInstruction" Content="Instruction:&#xD;&#xA;&#xD;&#xA;1. The pricing and availability  of current membership type are summarized &#xD;&#xA;in the list; &#xD;&#xA;2. To change pricing or availability of a certain type of membership type, &#xD;&#xA;please select the membership type, enter the new price or the new &#xD;&#xA;availability, and press the &quot;Change&quot; button to make adjustments." HorizontalAlignment="Left" Margin="361,73,0,0" VerticalAlignment="Top" Height="152" Width="406"/>
+        <ComboBox HorizontalAlignment="Left" Margin="185,160,0,0" VerticalAlignment="Top" Width="145" TabIndex="3">
+            <ComboBoxItem Content="Yes"/>
+            <ComboBoxItem Content="No"/>
+        </ComboBox>
+        <Button x:Name="btnManageDiscount" Content="Manage Discount" HorizontalAlignment="Left" Margin="592,277,0,0" VerticalAlignment="Top" Width="132" Click="btnManageDiscount_Click" TabIndex="5"/>
+        <Button x:Name="btnAdditionalFeatures" Content="Additional Features" HorizontalAlignment="Left" Margin="592,316,0,0" VerticalAlignment="Top" Width="132" Click="btnAdditionalFeatures_Click" TabIndex="6"/>
+
+    </Grid>
+</Window>

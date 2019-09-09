@@ -1,0 +1,39 @@
+﻿<Window x:Class="FinalProjectTemplate2.Additional_Features"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FinalProjectTemplate2"
+        mc:Ignorable="d"
+        Title="Additional_Features" Height="442.291" Width="698.822">
+    <Grid>
+        <TextBox x:Name="txtCurrentAF" HorizontalAlignment="Left" Height="127" Margin="50,78,0,0" TextWrapping="Wrap" Text="Feature Name                 Price&#xD;&#xA;Locker Rental                  $1.00/Month&#xD;&#xA;Personal Fitness Plan      $5.00/Month&#xD;&#xA;Equipment Rental           $3.00/Month&#xD;&#xA;Massage                         $10.00/Month&#xD;&#xA;Meal Plan                        $15.00/Month&#xD;&#xA;" VerticalAlignment="Top" Width="258" IsTabStop="False"/>
+        <Rectangle x:Name="recAddNewFeatures" HorizontalAlignment="Left" Height="144" Margin="350,243,0,0" Stroke="Black" VerticalAlignment="Top" Width="294"/>
+        <Rectangle x:Name="recChangeOrDelete" HorizontalAlignment="Left" Height="144" Margin="50,243,0,0" Stroke="Black" VerticalAlignment="Top" Width="258"/>
+        <Label x:Name="lblFeatureType" Content="Feature Type:" HorizontalAlignment="Left" Margin="64,256,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbbFeatureType" HorizontalAlignment="Left" Margin="147,261,0,0" VerticalAlignment="Top" Width="147" TabIndex="1" >
+            <ListBoxItem Content="Locker Rental"/>
+            <ListBoxItem Content="Personal Fitness Plan"/>
+            <ListBoxItem Content="Equipment Rental"/>
+            <ListBoxItem Content="Massage"/>
+            <ListBoxItem Content="Meal Plan"/>
+
+        </ComboBox>
+        <Label x:Name="lblAdjestFeaturePrice" Content="Discount:" HorizontalAlignment="Left" Margin="64,303,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFeaturePrice" HorizontalAlignment="Left" Height="23" Margin="147,306,0,0" TextWrapping="Wrap" Text="$10.00" VerticalAlignment="Top" Width="69" TabIndex="2"/>
+        <Label x:Name="lblNewAFName" Content="New Feature Name:" HorizontalAlignment="Left" Margin="360,255,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNewFeaturePrice" Content="Feature Price:" HorizontalAlignment="Left" Margin="360,301,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNewAFName" HorizontalAlignment="Left" Height="23" Margin="507,259,0,0" TextWrapping="Wrap" Text="Shower" VerticalAlignment="Top" Width="120" TabIndex="5" />
+        <TextBox x:Name="txtNewFeature" HorizontalAlignment="Left" Height="22" Margin="507,305,0,0" TextWrapping="Wrap" Text="$5.00" VerticalAlignment="Top" Width="61" TabIndex="6"/>
+        <Label x:Name="lblChangeOrDeleteAF" Content="Change Or Delete" HorizontalAlignment="Left" Margin="64,230,0,0" VerticalAlignment="Top" Background="White"/>
+        <Label x:Name="lblAddNewDiscountAF" Content="Add New Features" HorizontalAlignment="Left" Margin="371,230,0,0" VerticalAlignment="Top" Background="White"/>
+        <TextBlock x:Name="txbPerMonthAF" HorizontalAlignment="Left" Margin="573,306,0,0" TextWrapping="Wrap" Text="per month" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txbPerMonthAF1" HorizontalAlignment="Left" Margin="221,309,0,0" TextWrapping="Wrap" Text="per month" VerticalAlignment="Top"/>
+        <Label x:Name="lblAdditionalFeaturesInfo" Content="Additional Features" HorizontalAlignment="Left" Margin="257,20,0,0" VerticalAlignment="Top" Foreground="#FF85B014" FontSize="20"/>
+        <TextBlock x:Name="txbFeatureInstruction" HorizontalAlignment="Left" Margin="350,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="126" Width="294"><Run Text="Instruction:"/><LineBreak/><Run Text="1. Additional features that are currently offered are shown on the left."/><LineBreak/><Run Text="2. Change or delete the additional features by selecting the feature type and clicking &quot;Change&quot; or &quot;Delete&quot;."/><LineBreak/><Run Text="3. Add new feature type by entering the new feature name and feature price and clicking &quot;Add&quot;."/></TextBlock>
+        <Button x:Name="btnChangeAF" Content="Change" HorizontalAlignment="Left" Margin="80,355,0,0" VerticalAlignment="Top" Width="75" TabIndex="3"/>
+        <Button x:Name="btnDeleteAF" Content="Delete" HorizontalAlignment="Left" Margin="186,355,0,0" VerticalAlignment="Top" Width="75" TabIndex="4"/>
+        <Button x:Name="btnAddNewFeature" Content="Add" HorizontalAlignment="Left" Margin="459,355,0,0" VerticalAlignment="Top" Width="75" TabIndex="7"/>
+
+    </Grid>
+</Window>
